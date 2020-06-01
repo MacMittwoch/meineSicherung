@@ -1,4 +1,4 @@
-# meineSicherung V1.0
+# meineSicherung
 
 ## Description
 
