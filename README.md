@@ -1,4 +1,4 @@
-# meineSicherung
+# meineSicherung V1.0
 
 ## Description
 
@@ -14,7 +14,7 @@ All outputs of restic will be shown, to identify problems or mistakes also to fo
 
 1. Copy the single file meinesicherung.sh in your user or root directroy, depends on how do you want to use meineSicherung, as personal or system backup solution. 
 
-2. Open the file meinesicherung.sh with an text editor and maintain the following parameters:
+2. Open the file meinesicherung.sh with a text editor and maintain the following parameters:
 
     a) **REPOSITORY**: restic organize all backups in a single repository. A directory will be used, where restic will place all files. Please enter here the path to the repository. It is to recommend to use the path to an external drive, which is mounted and reachable of the system.
 
@@ -22,7 +22,7 @@ All outputs of restic will be shown, to identify problems or mistakes also to fo
 
     c) **RESTORE_PATH**: If you want to restore your backup, this is the place where restic will kopy all files back. restic will consider the original path structure and the complete backup. With other words, all files will be restored, if you want only one file. meineSicherung will consider the last actual snapshot.
 
-    d) **RESTIC_PASSWORD**: This is very important, because this is a must have for restic to encrypt the complete repository with all snapshots inside. Please change the predefined standard password "mypassword" with an safty one by your self and keep it at a good place. 
+    d) **RESTIC_PASSWORD**: This is very important, because this is a must have for restic to encrypt the complete repository with all snapshots inside. Please change the predefined standard password "mypassword" with a safty one by your self and keep it at a good place. 
 
 3. Next step is to install restic. Please use here your package manager of your system. For macOS i can recommend to use MacPorts ([Link](https://www.macports.org))  
 
@@ -67,7 +67,7 @@ $ ./meinesicherung.sh
 
 The menu will guide you to your first steps and periodic personal backups and restores.
 
-For background usage, please use the option "-s" for the silent mode to switch off the menu. The backup will start immediatly.
+For a background usage, please use the option "-s" for the silent mode to switch off the menu. The backup will start immediatly.
 
 ~~~~
 $ ./meinesicherung.sh -s
